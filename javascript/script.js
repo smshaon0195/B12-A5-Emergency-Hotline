@@ -56,7 +56,7 @@ function nameAlert(target) {
     // card history
 
     let addHistory = {
-      name: this.parentNode.parentElement.querySelector(".sub-title").innerText,
+      name: this.parentNode.parentElement.querySelector("h3").innerText,
       number:
         this.parentNode.parentNode.querySelector(".calling-number").innerText,
       date: new Date().toLocaleTimeString(),
@@ -69,7 +69,7 @@ function nameAlert(target) {
 
         <div class="history-card bg-[#F2F2F2] flex items-center justify-between p-3 rounded-lg my-3">
           <div class="titile-left">
-            <h3 class="title font-bold  w-[170px] leading-4.5">
+            <h3 class="title w-[170px] leading-4.5">
             ${addHistory.name}
             </h3>
           <p class="text-gray text-[15px]">${addHistory.number}</p>
