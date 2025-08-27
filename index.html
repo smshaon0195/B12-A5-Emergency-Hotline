@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emarjency Help Line</title>
+    <!-- taiwind css CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- daisy Css CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- google Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font Awsom CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- manual css link -->
+    <link rel="stylesheet" href="../sytle/style.css" />
+  </head>
+  <body class="manrope bg-[#F5FFF6]">
+    <nav class="flex justify-between container m-auto items-center my-3">
+      <div class="main-logo-left flex items-center gap-3">
+        <img class="w-14" src="./assets/logo.png" alt="" />
+        <h2 class="text-[#006747] text-3xl font-bold">
+          Emergency <br />
+          Service
+        </h2>
+      </div>
+      <div class="right-side-link flex gap-4">
+        <button class="btn rounded-4xl p-5 bg-[#E8FBEC]">
+          <span id="hart-count">0</span>
+          <img class="w-8 h-8" src="../assets/heart.png" alt="" />
+        </button>
+
+        <button class="btn rounded-4xl p-5 bg-[#E8FBEC]">
+          <span id="total-coin">100</span>
+          <img class="w-7 h-7" src="../assets/coin.png" alt="" />
+        </button>
+        <button class="btn rounded-4xl p-5 text-white bg-[#009F3C]">
+          <p><span>0</span> Copy</p>
+        </button>
+      </div>
+    </nav>
+    <section
+      class="text-white bg-gradient-to-r py-6 from-green-900 via-green-700 to-green-900"
+    >
+      <div
+        class="benner-section container m-auto text-center items-center flex flex-col"
+      >
+        <img class="w-20" src="../assets/logo-dark.png" alt="" />
+        <h1 class="text-3xl font-semibold mt-5">জরুরি সেবা ডিরেক্টরি</h1>
+        <h4>
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </h4>
+      </div>
+    </section>
+    <!-- main card container -->
+    <main class="w-11/12 grid grid-cols-12 container m-auto gap-5 my-5">
+      <!-- left site card container -->
+      <div class="left-container-collops-9 col-span-9 grid grid-cols-3 gap-5">
+        <!-- card 1 -->
+        <div class="card p-5 shadow bg-white">
+          <div class="icon flex items-center justify-between">
+            <img
+              class="w-15 bg-[#FFE3E2] p-3 rounded-2xl"
+              src="../assets/emergency.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart text-3xl"></i>
+          </div>
+          <div class="card-title grid text-xl my-5 leading-4">
+            <h3>জাতীয় জরুরি সেবা</h3>
+            <h3 class="text-gray sub-title text-[15px]">National Emergency</h3>
+          </div>
+          <div class="helpLine-number">
+            <h3 class="text-3xl calling-number font-bold">999</h3>
+            <button
+              class="btn rounded-4xl py-2 text-sm bg-[#F2F2F2] text-gray items-center"
+            >
+              সার্বজনীন
+            </button>
+          </div>
+          <!-- card button call & Copy -->
+          <div class="cll-div flex gap-1 my-5">
+            <button
+              class="btn copy-btn rounded-[7px] w-1/2 flex-1 bg-white text-gray"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button id="call-emarjence"
+              class="btn call-btn rounded-[7px] w-1/2 flex-1 text-white bg-[#009F3C]"
+            >
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card p-5 shadow bg-white">
+          <div class="icon flex items-center justify-between">
+            <img
+              class="w-15 bg-[#FFE3E2] p-3 rounded-2xl"
+              src="../assets/police.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart text-3xl"></i>
+          </div>
+          <div class="card-title grid text-xl my-5 leading-4">
+            <h3>পুলিশ</h3>
+            <h3 class="text-gray sub-title text-[15px]">police</h3>
+          </div>
+          <div class="helpLine-number">
+            <h3 class="text-3xl calling-number font-bold">999</h3>
+            <button
+              class="btn rounded-4xl py-2 text-sm bg-[#F2F2F2] text-gray items-center"
+            >
+              পুলিশ
+            </button>
+          </div>
+          <div class="cll-div flex gap-1 my-5">
+            <button
+              class="btn copy-btn rounded-[7px] w-1/2 flex-1 bg-white text-gray"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button id="call-police"
+              class="btn call-btn rounded-[7px] w-1/2 flex-1 text-white bg-[#009F3C]"
+            >
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card p-5 shadow bg-white">
+          <div class="icon flex items-center justify-between">
+            <img
+              class="w-15 bg-[#FFE3E2] p-3 rounded-2xl"
+              src="../assets/fire-service.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart text-3xl"></i>
+          </div>
+          <div class="card-title grid text-xl my-5 leading-4">
+            <h3>ফায়ার সার্ভিস</h3>
+            <h3 class="text-gray sub-title text-[15px]">Fire Service</h3>
+          </div>
+          <div class="helpLine-number">
+            <h3 class="text-3xl calling-number font-bold">999</h3>
+            <button
+              class="btn rounded-4xl py-2 text-sm bg-[#F2F2F2] text-gray items-center"
+            >
+              ফায়ার
+            </button>
+          </div>
+          <div class="cll-div flex gap-1 my-5">
+            <button
+              class="btn copy-btn rounded-[7px] w-1/2 flex-1 bg-white text-gray"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button id="call-fire"
+              class="btn call-btn rounded-[7px] w-1/2 flex-1 text-white bg-[#009F3C]"
+            >
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card p-5 shadow bg-white">
+          <div class="icon flex items-center justify-between">
+            <img
+              class="w-15 bg-[#FFE3E2] p-3 rounded-2xl"
+              src="../assets/ambulence.png"
+              alt=""/>
+            <i class="fa-regular fa-heart text-3xl"></i>
+          </div>
+          <div class="card-title grid text-xl my-5 leading-4">
+            <h3>অ্যাম্বুলেন্স</h3>
+            <h3 class="text-gray sub-title text-[15px]">Ambulence</h3>
+          </div>
+          <div class="helpLine-number">
+            <h3 class="text-3xl calling-number font-bold">1994-999999</h3>
+            <button
+              class="btn rounded-4xl py-2 text-sm bg-[#F2F2F2] text-gray items-center"
+            >
+              স্বাস্থ্য
+            </button>
+          </div>
+          <div class="cll-div flex gap-1 my-5">
+            <button
+              class="btn copy-btn rounded-[7px] w-1/2 flex-1 bg-white text-gray"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button id="call-health"
+              class="btn call-btn rounded-[7px] w-1/2 flex-1 text-white bg-[#009F3C]"
+            >
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="card p-5 shadow bg-white">
+          <div class="icon flex items-center justify-between">
+            <img
+              class="w-15 bg-[#FFE3E2] p-3 rounded-2xl"
+              src="../assets/emergency.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart text-3xl"></i>
+          </div>
+          <div class="card-title grid text-xl my-5 leading-4">
+            <h3>নারী ও শিশু সহায়তা</h3>
+            <h3 class="text-gray sub-title text-[15px]">Women & Child Helpline</h3>
+          </div>
+          <div class="helpLine-number">
+            <h3 class="text-3xl calling-number font-bold">109</h3>
+            <button
+              class="btn rounded-4xl py-2 text-sm bg-[#F2F2F2] text-gray items-center"
+            >
+              সহায়তা
+            </button>
+          </div>
+          <div class="cll-div flex gap-1 my-5">
+            <button
+              class="btn copy-btn rounded-[7px] w-1/2 flex-1 bg-white text-gray"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button id="call-child"
+              class="btn call-btn rounded-[7px] w-1/2 flex-1 text-white bg-[#009F3C]"
+            >
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="card p-5 shadow bg-white">
+          <div class="icon flex items-center justify-between">
+            <img
+              class="w-15 bg-[#FFE3E2] p-3 rounded-2xl"
+              src="../assets/emergency.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart text-3xl"></i>
+          </div>
+          <div class="card-title grid text-xl my-5 leading-4">
+            <h3>দুদক</h3>
+            <h3 class="text-gray sub-title text-[15px]">Anti-Corruption</h3>
+          </div>
+          <div class="helpLine-number">
+            <h3 class="text-3xl calling-number font-bold">106</h3>
+            <button
+              class="btn rounded-4xl py-2 text-sm bg-[#F2F2F2] text-gray items-center"
+            >
+              সরকারি
+            </button>
+          </div>
+          <div class="cll-div flex gap-1 my-5">
+            <button
+              class="btn copy-btn rounded-[7px] w-1/2 flex-1 bg-white text-gray"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button id="call-dudok"
+              class="btn call-btn rounded-[7px] w-1/2 flex-1 text-white bg-[#009F3C]"
+            >
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="card p-5 shadow bg-white">
+          <div class="icon flex items-center justify-between">
+            <img
+              class="w-15 bg-[#FFE3E2] p-3 rounded-2xl"
+              src="../assets/emergency.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart text-3xl"></i>
+          </div>
+          <div class="card-title grid text-xl my-5 leading-4">
+            <h3>বিদ্যুৎ বিভ্রাট</h3>
+            <h3 class="text-gray sub-title text-[15px]">Electricity Outage</h3>
+          </div>
+          <div class="helpLine-number">
+            <h3 class="text-3xl calling-number font-bold">16216</h3>
+            <button
+              class="btn rounded-4xl py-2 text-sm bg-[#F2F2F2] text-gray items-center"
+            >
+              বিদ্যুৎ
+            </button>
+          </div>
+          <div class="cll-div flex gap-1 my-5">
+            <button
+              class="btn copy-btn rounded-[7px] w-1/2 flex-1 bg-white text-gray"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button id="call-biddut"
+              class="btn call-btn rounded-[7px] w-1/2 flex-1 text-white bg-[#009F3C]"
+            >
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="card p-5 shadow bg-white">
+          <div class="icon flex items-center justify-between">
+            <img
+              class="w-15 bg-[#FFE3E2] p-3 rounded-2xl"
+              src="../assets/emergency.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart text-3xl"></i>
+          </div>
+          <div class="card-title grid text-xl my-5 leading-4">
+            <h3>ব্রাক</h3>
+            <h3 class="text-gray sub-title text-[15px]">Brac</h3>
+          </div>
+          <div class="helpLine-number">
+            <h3 class="text-3xl calling-number font-bold">16445</h3>
+            <button
+              class="btn rounded-4xl py-2 text-sm bg-[#F2F2F2] text-gray items-center"
+            >
+              এনজিও
+            </button>
+          </div>
+          <div class="cll-div flex gap-1 my-5">
+            <button
+              class="btn copy-btn rounded-[7px] w-1/2 flex-1 bg-white text-gray"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button id="call-ngo"
+              class="btn call-btn rounded-[7px] w-1/2 flex-1 text-white bg-[#009F3C]"
+            >
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+        </div>
+        <!-- Card 9 -->
+        <div class="card p-5 shadow bg-white">
+          <div class="icon flex items-center justify-between">
+            <img
+              class="w-15 bg-[#FFE3E2] p-3 rounded-2xl"
+              src="../assets/emergency.png"
+              alt=""
+            />
+            <i class="fa-regular fa-heart text-3xl"></i>
+          </div>
+          <div class="card-title  grid text-xl my-5 leading-4">
+            <h3>বাংলাদেশ রেলওয়ে</h3>
+            <h3 class="text-gray sub-title text-[15px]">Bangladesh Railway</h3>
+          </div>
+          <div class="helpLine-number">
+            <h3 class="text-3xl calling-number font-bold">163</h3>
+            <button
+              class="btn rounded-4xl py-2 text-sm bg-[#F2F2F2] text-gray items-center"
+            >
+              পরিবহন
+            </button>
+          </div>
+          <div class="cll-div flex gap-1 my-5">
+            <button
+              class="btn copy-btn rounded-[7px] w-1/2 flex-1 bg-white text-gray"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button id="call-ralway"
+              class="btn call-btn rounded-[7px] w-1/2 flex-1 text-white bg-[#009F3C]"
+            >
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- right call history -->
+      <div class="right-history-colops-3 col-span-3 bg-white shadow p-5">
+        <div class="call-history flex justify-between">
+          <div class="history flex items-center gap-2">
+            <i class="fa-solid fa-clock"></i>
+            <h4>Call History</h4>
+          </div>
+          <button class="btn rounded-4xl px-5 text-white bg-[#009F3C]">
+            Clear
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>

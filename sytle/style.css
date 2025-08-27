@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+
+.manrope {
+    font-family: "Hind Madurai", sans-serif;
+  
+  font-style: normal;
+  
+}
+.text-gray{
+    color: #818181;
+}
+.fa-heart{
+    cursor: pointer;
+}
+.call-btn:hover{
+    background-color: #818181;
+    transition: 0.5s;
+}
