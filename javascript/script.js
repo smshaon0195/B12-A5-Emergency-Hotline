@@ -1,6 +1,6 @@
 // hard icon click and top adding ++
 let historys = [];
-    let historyCall = document.getElementById("calling-history")
+let historyCall = document.getElementById("calling-history");
 
 let count = 0;
 let hartValue = document.getElementById("hart-count");
@@ -32,14 +32,15 @@ function nameAlert(target) {
 
     let addHistory = {
       name: this.parentNode.parentElement.querySelector(".sub-title").innerText,
-      number: this.parentNode.parentNode.querySelector(".calling-number").innerText,
+      number:
+        this.parentNode.parentNode.querySelector(".calling-number").innerText,
       date: new Date().toLocaleTimeString(),
     };
     historys.push(addHistory);
 
-      let createDoc = document.createElement("div");
+    let createDoc = document.createElement("div");
 
-      createDoc.innerHTML = `
+    createDoc.innerHTML = `
 
         <div class="history-card bg-[#F2F2F2] flex items-center justify-between p-3 rounded-lg my-3">
           <div class="titile-left">
@@ -52,10 +53,8 @@ function nameAlert(target) {
             <p>${addHistory.date}</p>
           </div>
         </div>
-`
-historyCall.appendChild(createDoc);
-
-
+`;
+    historyCall.appendChild(createDoc);
 
     // Calling count
     let callingText =
@@ -74,8 +73,4 @@ nameAlert("call-child");
 nameAlert("call-dudok");
 nameAlert("call-biddut");
 nameAlert("call-ngo");
-nameAlert(
-  "call-ralway"
-
-  // history count
-);
+nameAlert("call-ralway");
