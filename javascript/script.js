@@ -13,6 +13,31 @@ for (let iconList of hartIcon) {
     hartValue.innerText = count;
   });
 }
+// Copy Count
+
+let Copycount = 0;
+let copyValue = document.getElementById("copy-count");
+
+let copyBtn = document.getElementsByClassName("copy-btn");
+for (let cpyBtn of copyBtn) {
+  cpyBtn.addEventListener("click", function () {
+    Copycount++;
+
+navigator.clipboard.writeText(this.parentNode.parentNode.querySelector(".calling-number").innerText)
+  .then(() => {
+    alert("নাম্বার কপি হয়েছে : " + this.parentNode.parentNode.querySelector(".calling-number").innerText );
+  })
+  .catch(err => {
+    alert("Failed to copy: " + err);
+  });
+
+    copyValue.innerText = Copycount;
+  });
+}
+
+
+
+
 
 // calling alert funcation
 function nameAlert(target) {
@@ -74,3 +99,8 @@ nameAlert("call-dudok");
 nameAlert("call-biddut");
 nameAlert("call-ngo");
 nameAlert("call-ralway");
+
+// clear button click and clear this div
+document.getElementById("clear-btn").addEventListener("click", function(){
+  document.getElementById("calling-history").innerHTML=""
+})
