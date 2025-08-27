@@ -14,7 +14,7 @@
     cursor: pointer;
 }
 .call-btn:hover{
-    background-color: #818181;
+    background-color: #1f1e1e;
     transition: 0.5s;
 }
 .copy-btn:hover{
@@ -23,6 +23,10 @@
     color: white;
 }
 #clear-btn:hover{
+    background-color: #1f1e1e;
+    transition: 0.5s;
+}
+.cpy-count:hover{
     background-color: #1f1e1e;
     transition: 0.5s;
 }

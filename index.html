@@ -33,16 +33,16 @@
     <!-- manual css link -->
     <link rel="stylesheet" href="./sytle/style.css" />
   </head>
-  <body class="manrope bg-[#F5FFF6]">
-    <nav class="flex justify-between container m-auto items-center my-3">
-      <div class="main-logo-left flex items-center gap-3">
-        <img class="w-14" src="./assets/logo.png" alt="" />
-        <h2 class="text-[#006747] text-3xl font-bold">
-          Emergency <br />
+  <body class="manrope bg-[#F5FFF6] p-5 md:p-0">
+    <nav class="md:flex md:justify-between container m-auto items-center my-3 ">
+      <div class="main-logo-left md:flex justify-center grid md:items-center  gap-3">
+        <div class="flex justify-center"><img class="md:w-14 w-25 " src="./assets/logo.png" alt="" /></div>
+        <h2 class="text-[#006747] md:text-3xl text-2xl md:w-50 font-bold">
+          Emergency 
           Service
         </h2>
       </div>
-      <div class="right-side-link flex gap-4">
+      <div class="right-side-link flex justify-center gap-4">
         <button class="btn rounded-4xl p-5 bg-[#E8FBEC]">
           <span id="hart-count">0</span>
           <img class="w-8 h-8" src="./assets/heart.png" alt="" />
@@ -52,7 +52,7 @@
           <span id="total-coin">100</span>
           <img class="w-7 h-7" src="./assets/coin.png" alt="" />
         </button>
-        <button class="btn rounded-4xl p-5 text-white bg-[#009F3C]">
+        <button class="btn cpy-count rounded-4xl p-5 text-white bg-[#009F3C]">
           <p><span id="copy-count">0</span> Copy</p>
         </button>
       </div>
@@ -61,10 +61,10 @@
       class="text-white bg-gradient-to-r py-6 from-green-900 via-green-700 to-green-900"
     >
       <div
-        class="benner-section container m-auto text-center items-center flex flex-col"
+        class="benner-section container m-auto text-center items-center flex flex-col p-2"
       >
         <img class="w-20" src="./assets/logo-dark.png" alt="" />
-        <h1 class="text-3xl font-semibold mt-5">জরুরি সেবা ডিরেক্টরি</h1>
+        <h1 class="md:text-3xl text-xl font-semibold mt-5">জরুরি সেবা ডিরেক্টরি</h1>
         <h4>
           Government Emergency Services at Your Fingertip – A Project by
           Government of the People’s Republic of Bangladesh
@@ -72,9 +72,9 @@
       </div>
     </section>
     <!-- main card container -->
-    <main class="w-11/12 grid grid-cols-12 container m-auto gap-5 my-5">
+    <main class="md:w-11/12 md:grid md:grid-cols-12 container m-auto gap-4 my-5">
       <!-- left site card container -->
-      <div class="left-container-collops-9 col-span-9 grid grid-cols-3 gap-5">
+      <div class="left-container-collops-9 md:col-span-9 grid md:grid-cols-3 gap-4">
         <!-- card 1 -->
         <div class="card p-5 shadow bg-white">
           <div class="icon flex items-center justify-between">
@@ -407,7 +407,7 @@
       <!-- right call history -->
       <div
         
-        class="right-history-colops-3 col-span-3 bg-white shadow p-5"
+        class="right-history-colops-3 col-span-3 mt-3 md:mt-0 bg-white shadow p-5"
       >
         <div class="call-history flex justify-between">
           <div class="history flex items-center gap-2">
